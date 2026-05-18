@@ -305,13 +305,16 @@ const SHORT=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const HAS_STUDY=['Monday','Tuesday','Wednesday','Thursday'];
 
 const SCHEDULE={
-  Monday:{icon:'🏋️',type:'gym',badge:'badge-gym',label:'Push Day',sub:'Chest · Shoulders · Triceps',timing:'Morning 9–11am or Evening 6–8pm',hype:"Push day. Every rep builds the body you're after. Let's go.",exercises:[
-    {name:'Dumbbell Bench Press',sets:'3 × 10',note:'Control the descent — 2 sec down. Start light, form first. Add weight each week.'},
-    {name:'Dumbbell Shoulder Press',sets:'3 × 10',note:"Seated or standing. Slight forward angle, don't flare elbows wide."},
-    {name:'Lateral Raises',sets:'3 × 15',note:'KEY for wide shoulders. Light weight, slow and controlled. Slight bend in elbow.'},
-    {name:'Incline Dumbbell Press',sets:'3 × 12',note:'30–45° incline. Upper chest finisher after flat bench.'},
-    {name:'Tricep Pushdown',sets:'3 × 12',note:'Cable machine. Elbows tucked at sides, full extension at the bottom.'},
-    {name:'Face Pulls',sets:'3 × 15',note:'High cable, pull to forehead. Non-negotiable — protects shoulders from climbing stress.'},
+  Monday:{icon:'🏋️',type:'gym',badge:'badge-gym',label:'Chest + Biceps',sub:'Chest · Biceps',timing:'Morning 9–11am or Evening 6–8pm',hype:"Chest and biceps. Build the front, build the arms. Every set is progress. Let's go.",exercises:[
+    {name:'Barbell Bench Press',sets:'4 × 8–10',note:'Big compound lift — the foundation of chest day. Control the bar down to your chest, pause briefly, drive up. Keep your feet flat and back slightly arched. Add weight each week.'},
+    {name:'Pec Fly (Cable or Dumbbell)',sets:'3 × 12',note:'Isolates the chest fully. If using dumbbells, slight bend in elbows, wide arc down then squeeze together at the top. Feel the stretch in your chest at the bottom.'},
+    {name:'Chest Press (Machine)',sets:'3 × 12',note:'Great after free weights — machine keeps tension constant. Full range of motion. Squeeze your chest at the top of each rep, not just your arms.'},
+    {name:'Incline Dumbbell Press',sets:'3 × 10',note:'30–45° incline bench. Hits upper chest which gives that full, thick look. Keep elbows at roughly 45° — not flared wide.'},
+    {name:'Lateral Raises',sets:'3 × 15',note:'Key for wide shoulders — do not skip these. Light weight, slow and controlled. Slight bend in elbow. Raise to shoulder height, no higher.'},
+    {name:'Face Pulls',sets:'3 × 15',note:'High cable, pull to forehead with elbows flared. Non-negotiable for shoulder health given your climbing. Prevents impingement over time.'},
+    {name:'Barbell / Dumbbell Curl',sets:'3 × 12',note:'Stand tall, no swinging. Control the full range — all the way down, all the way up. Supinate (rotate wrist outward) at the top for full bicep contraction.'},
+    {name:'Hammer Curls',sets:'3 × 12',note:'Neutral grip (thumbs up). Builds the brachialis under the bicep — makes your arm look bigger from the side. Slower tempo, no swinging.'},
+    {name:'Preacher Curls',sets:'3 × 10',note:'Use the preacher bench or a Scott bench. Eliminates cheating — the pad locks your arm in place. Slow on the way down. Great finisher for a full bicep pump.'},
   ]},
   Tuesday:{icon:'🧗',type:'climb',badge:'badge-climb',label:'Climbing Session 1',sub:'Indoor Bouldering · Afternoon/Night',timing:'Afternoon or evening — no uni today',hype:"No uni, no excuses. Get on the wall. This is where the real gains happen.",exercises:null,activities:[
     {title:'🧗 Session focus — volume first',body:"Warm up on easy grades for 10 min. 60–75% on confident grades, last 25% push your limit. You're fresh — use it."},
@@ -319,13 +322,16 @@ const SCHEDULE={
     {title:'💡 Technique cue',body:'Focus on your feet. Trust your footwork — it takes load off your forearms and separates grades.'},
     {title:'🏊 Optional post-climb swim',body:'15–20 min easy laps after climbing flushes the forearm pump and speeds recovery for Wednesday gym.'},
   ]},
-  Wednesday:{icon:'🏋️',type:'gym',badge:'badge-gym',label:'Pull Day',sub:'Back · Biceps',timing:'Morning 9–11am before uni',hype:"Pull day — the session that builds your back. You climbed yesterday so keep it smart, not stupid.",exercises:[
-    {name:'Lat Pulldown',sets:'3 × 10',note:'Wide overhand grip, pull to upper chest. Keep it to 80% — you climbed Tuesday. Stop 2 reps before failure.'},
-    {name:'Seated Cable Row',sets:'3 × 12',note:"Squeeze shoulder blades at the end. Don't shrug. Think chest up."},
-    {name:'Pull-Ups',sets:'3 × max–1',note:'Stop 1 rep before failure each set. Rest 2 min. Target: 8+ by August, 12+ by January.'},
-    {name:'Barbell / Dumbbell Curl',sets:'3 × 12',note:"Slow and controlled. Don't swing. Supinate at the top."},
-    {name:'Hammer Curls',sets:'3 × 12',note:'Neutral grip. Builds forearm and brachialis — direct carryover to climbing grip.'},
-    {name:'Rear Delt Flies',sets:'3 × 15',note:'Slight bend in elbow. Think "show your armpits" at the top.'},
+  Wednesday:{icon:'🏋️',type:'gym',badge:'badge-gym',label:'Back + Triceps',sub:'Back · Triceps',timing:'Morning 9–11am before uni',hype:"Back and triceps. You climbed yesterday so keep it smart — build the engine, don't break it.",exercises:[
+    {name:'Lat Pulldown',sets:'4 × 10',note:'Wide overhand grip, pull bar to upper chest. Keep it to 80% today — you climbed Tuesday, your lats have some fatigue. Stop 2 reps before failure. Focus on driving elbows DOWN not just pulling with your hands.'},
+    {name:'Seated Cable Row',sets:'3 × 12',note:'Sit tall, chest up. Pull the handle to your lower chest, squeeze shoulder blades together for 1 second at the end. Do NOT shrug or lean back excessively. This builds thickness through the middle back.'},
+    {name:'Pull-Ups',sets:'3 × max–1',note:'Hang, then drive elbows to hips — think "put your elbows in your pockets". Stop 1 rep before failure each set. Rest 2 min. Track your reps — target 8+ by August, 12+ by January.'},
+    {name:'Dumbbell Row (Single Arm)',sets:'3 × 10 each',note:'Brace one hand on a bench. Pull dumbbell to your hip, not your shoulder. Keep your back flat and parallel to the ground. Full range — let the weight hang at the bottom, drive the elbow back at the top.'},
+    {name:'Rear Delt Flies',sets:'3 × 15',note:'Bent over or on an incline bench. Slight bend in elbows. Think "show your armpits" as you raise. Light weight, slow tempo. Builds the rear delt that makes shoulders look 3D and protects against climbing injuries.'},
+    {name:'Skull Crushers',sets:'3 × 10',note:'Lie flat on bench, barbell or EZ bar above your forehead. Lower the bar to your forehead by bending only at the elbows — keep upper arms vertical and still. Extend back up. Go light first — form is everything here.'},
+    {name:'Tricep Pushdown',sets:'3 × 12',note:'Cable machine, high pulley. Elbows locked at sides — they MUST not move. Push the bar down until arms are fully extended. Slow on the way back up. This is the primary tricep builder.'},
+    {name:'Overhead Tricep Extension',sets:'3 × 12',note:'Single dumbbell or cable behind your head. Elbows pointing forward, lower weight behind your head then extend up. Stretches the long head of the tricep — the biggest portion of the muscle.'},
+    {name:'Face Pulls',sets:'3 × 15',note:'High cable, pull to forehead with elbows flared. Essential shoulder health work — do not skip. Your shoulders handle a huge load from climbing and pressing.'},
   ]},
   Thursday:{icon:'🧗',type:'climb',badge:'badge-climb',label:'Climbing Session 2',sub:'Indoor Bouldering · Evening',timing:'Evening ~6–8pm after uni',hype:"Second session of the week. Push the grades you bailed on Tuesday. You're stronger than you think.",exercises:null,activities:[
     {title:'🧗 Session focus — intensity',body:'You had Tuesday for volume. Today push your limit grades. Attempt problems 1–2 grades above your comfortable level. Falling is learning.'},
@@ -342,15 +348,16 @@ const SCHEDULE={
     {title:'⏰ Work schedule flex',body:"All-day work: swim morning if possible. 10am shift: swim after. 3–4pm shift: swim morning before."},
     {title:'😴 Sleep priority',body:"Saturday night sleep is critical before Sunday legs. Aim for 8 hours."},
   ]},
-  Sunday:{icon:'🏋️',type:'gym',badge:'badge-gym',label:'Legs + Core',sub:'Lower Body · Core · Slim Waist',timing:'Flex around work shift',hype:"Legs and core. This session builds the slim waist and athletic base. Do the work.",exercises:[
-    {name:'Goblet Squat',sets:'3 × 10',note:'Hold dumbbell at chest. Chest tall, knees track toes. Phase 2: progress to barbell back squat.'},
-    {name:'Romanian Deadlift (RDL)',sets:'3 × 10',note:'Hinge at hips, slight knee bend, weight close to legs. Feel the hamstring stretch.'},
-    {name:'Leg Press',sets:'3 × 12',note:"Feet shoulder-width. Don't lock knees at top. Good volume without spinal load."},
-    {name:'Walking Lunges',sets:'2 × 12/leg',note:'Bodyweight to start. Add dumbbells when easy. Builds strength for Scenic Rim hikes.'},
-    {name:'Calf Raises',sets:'3 × 15',note:'Full range — heel all the way down, all the way up. Slow and controlled.'},
-    {name:'Dead Bug',sets:'3 × 8/side',note:'Lower back pressed FLAT to the floor the entire time. Best exercise for a flat stomach long-term.'},
-    {name:'Hanging Knee Raises',sets:'3 × 10',note:'Hang from bar, pull knees to chest. No swinging. Also builds grip strength for climbing.'},
-    {name:'Plank Hold',sets:'3 × 30–45s',note:"Squeeze glutes and abs. Don't hold your breath. Add 5 seconds each week."},
+  Sunday:{icon:'🏋️',type:'gym',badge:'badge-gym',label:'Legs + Core',sub:'Quads · Hamstrings · Calves · Core',timing:'Flex around work shift',hype:"Leg day. Nobody likes it, everybody needs it. This is what builds the base everything else sits on. Do the work.",exercises:[
+    {name:'Barbell Back Squat',sets:'4 × 8–10',note:'The king of leg exercises. Bar sits on your upper traps, feet shoulder-width, toes slightly out. Squat until thighs are parallel to the floor — no partial reps. Drive through your heels on the way up. If form breaks down, reduce weight.'},
+    {name:'Leg Press',sets:'3 × 12',note:'Feet shoulder-width in the middle of the platform. Lower until knees are at 90°. Push through your whole foot. Do NOT lock out your knees at the top. Good volume without the spinal load of squats.'},
+    {name:'Leg Extension (Machine)',sets:'3 × 12–15',note:'Quad isolation. Sit with the pad just above your ankles. Extend legs fully, hold for 1 second at the top, lower slowly. Great for building the teardrop shape above the knee. Control the weight — no swinging.'},
+    {name:'Hamstring Curl (Machine)',sets:'3 × 12',note:'Lie face down, pad just below your calves. Curl your heels toward your glutes, squeeze at the top, lower slowly. Essential balance to quad work — neglecting hamstrings leads to injury. Important for hiking too.'},
+    {name:'Walking Lunges',sets:'3 × 12/leg',note:'Step forward, lower your back knee toward the floor, push off the front foot to step through. Keep your torso upright. Add dumbbells when bodyweight feels easy. Also directly improves your Scenic Rim hiking strength.'},
+    {name:'Calf Raises',sets:'4 × 15',note:'Full range — lower your heel all the way down off a step or plate, then rise all the way up onto your toes. Hold at the top for 1 second. Calves are slow-twitch dominant — they need higher reps and slow tempo to respond.'},
+    {name:'Dead Bug',sets:'3 × 8/side',note:'Lie on your back. Lower back pressed FLAT to the floor the entire time — this is non-negotiable. Extend opposite arm and leg, return, switch sides. The core exercise that actually builds a flat stomach long-term.'},
+    {name:'Hanging Knee Raises',sets:'3 × 10–12',note:'Hang from a pull-up bar, pull knees to chest in a controlled arc. No swinging — if you are swinging, you are using momentum not your abs. Also builds grip strength for climbing. Progress to straight-leg raises over time.'},
+    {name:'Plank Hold',sets:'3 × 30–60s',note:"Forearms on the floor, body in a straight line. Squeeze your glutes AND your abs together — most people only do one. Don't hold your breath. Add 5–10 seconds each week. By January you should be hitting 60s comfortably."},
   ]},
 };
 
@@ -359,9 +366,9 @@ function getDayRundown(dayName){
   const steps=[];
   steps.push({id:'wake',title:'Wake up + morning routine',time:'6:30 – 7:00 AM',tag:'wellness',icon:'🌅',desc:"Get up, drink 500ml water immediately. Brush teeth, quick stretch or 5 min walk outside. Your morning sets the tone — start it with intention, not your phone."});
   steps.push({id:'breakfast',title:'Breakfast + protein shake',time:'7:00 – 7:30 AM',tag:'food',icon:'🍳',desc:"3 eggs scrambled + 200g Greek yoghurt + oats and banana. If you're short on time: protein shake (30g) + banana + glass of milk. Aim for 40–50g protein before leaving the house. Non-negotiable on training days."});
-  if(dayName==='Monday'){steps.push({id:'gym',title:'Gym — Push Day',time:'9:00–10:30 AM  or  6:00–7:30 PM',tag:'fitness',icon:'🏋️',desc:'Chest, shoulders, triceps. 5 min warm-up: treadmill + arm circles + band pull-aparts. Hit all 6 exercises with the sets and reps from your Today page. Log every weight — every session.'});}
-  if(dayName==='Wednesday'){steps.push({id:'gym',title:'Gym — Pull Day (before uni)',time:'9:00 – 10:30 AM',tag:'fitness',icon:'🏋️',desc:'Back, biceps. Keep it to 80% — you climbed Tuesday. Stop 2 reps before failure on lat work. Uni starts at 12 so manage your time.'});}
-  if(dayName==='Sunday'){steps.push({id:'gym',title:'Gym — Legs + Core',time:'Flex around work shift',tag:'fitness',icon:'🏋️',desc:'Lower body and core. This is the session that builds the slim waist. All 8 exercises. Log your weights. If Sunday is destroyed by work, this is the first session to move, not skip entirely.'});}
+  if(dayName==='Monday'){steps.push({id:'gym',title:'Gym — Chest + Biceps',time:'9:00–10:30 AM  or  6:00–7:30 PM',tag:'fitness',icon:'🏋️',desc:'Chest and biceps — 9 exercises. Warm-up: 5 min treadmill + arm circles. Start with barbell bench press while you are freshest. Work through the full list on your Today page in order. Log every weight every session — this is how you know you are improving.'});}
+  if(dayName==='Wednesday'){steps.push({id:'gym',title:'Gym — Back + Triceps (before uni)',time:'9:00 – 10:30 AM',tag:'fitness',icon:'🏋️',desc:'Back and triceps — 9 exercises. Keep lat work to 80% today since you climbed Tuesday. Uni starts at 12 so aim to be done by 11:15am. Do not skip face pulls at the end — your shoulders depend on it.'});}
+  if(dayName==='Sunday'){steps.push({id:'gym',title:'Gym — Legs + Core',time:'Flex around work shift',tag:'fitness',icon:'🏋️',desc:'Legs and core — 9 exercises. Start with squats while your legs are fresh, then work through in order. This session is brutal but it is the one that builds the base. Log your weights. If Sunday work kills the timing, move it — do not skip it entirely.'});}
   if(dayName==='Monday'||dayName==='Wednesday'||dayName==='Sunday'){steps.push({id:'postworkout',title:'Post-workout protein hit',time:'Within 60 min of gym',tag:'food',icon:'🥤',desc:"CRITICAL window. Protein shake or Greek yoghurt + banana + glass of milk. 30–40g protein within 1 hour. This is when muscle repair starts — don't miss it."});}
   if(dayName==='Tuesday'){
     steps.push({id:'climb1',title:'Climbing Session 1',time:'Afternoon / Evening',tag:'fitness',icon:'🧗',desc:"Indoor bouldering. Warm up on easy grades 10 min. 60–75% session on confident grades, last 25% push your limit. You're fresh — no excuses."});
